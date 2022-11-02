@@ -16,13 +16,23 @@
 
 using ArraysSort;
 
-Collection<int> collection = new Collection<int>();
+Collection<int> array1 = new Collection<int>();
+Collection<int> array2 = new Collection<int>();
 
-collection.Add(5);
-collection.Add(2);
-collection.Add(3);
-collection.Add(7);
-collection.Add(9);
-Console.WriteLine(collection.Count);
-collection.Remove(2);
-Console.WriteLine(collection.GetItem(3));
+array1.Add(5);
+array1.Add(2);
+array1.Add(3);
+array1.Add(7);
+array1.Add(9);
+
+array2.Add(34);
+array2.Add(3);
+array2.Add(6);
+array2.Add(13);
+array2.Add(25);
+
+Console.WriteLine(array1 == array2);
+
+Console.WriteLine(array1.Count);
+array1.Remove(2);
+Console.WriteLine(array1.GetItem(3));
